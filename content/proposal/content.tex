@@ -1,5 +1,6 @@
 % Contents
-\cleardoublestylepage{empty}
+\let\cleardoublepage\clearpage
+% \cleardoublestylepage{empty}
 \thispagestyle{common}
 \pagestyle{common}
 \setcounter{page}{1}
@@ -19,16 +20,13 @@
     \input{content/proposal/translation/translation}
     \input{content/proposal/original/original}
 }
+\ifthenelse{\equal{\Type}{design}}
 {
-    \ifthenelse{\equal{\Type}{design}}
-    {
-        % `design` content
-        \input{content/proposal/proposal/proposal}
-        \input{content/proposal/translation/translation}
-        \input{content/proposal/original/original}
-        \input{content/proposal/midcheck/midcheck}
-    }
-    {
-        % otherwise, blank
-    }
+    % `design` content
+    \input{content/proposal/review/review}
+    \input{content/proposal/proposal/proposal}
+    \input{content/proposal/translation/translation}
+    \input{content/proposal/original/original}
+    % \input{content/proposal/midcheck/midcheck}
 }
+

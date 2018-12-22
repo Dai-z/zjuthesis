@@ -79,28 +79,33 @@
 }
 
 % `design` commands
-\DeclareDocumentCommand{\designproposaleval}{O{~} O{~}}
+\DeclareDocumentCommand{\designproposaleval}{O{~} O{~} O{~}}
 {
     \begin{flushright}
         \begin{tabular}{| >{\fangsong \zihao{4}}c
                         | >{\fangsong \zihao{5}}c
+                        | >{\fangsong \zihao{5}}c 
                         | >{\fangsong \zihao{5}}c |}
             \hline
             \multirow{2}*{成绩比例}
+            & 文献综述
             & 开题报告
             & 外文翻译 \\
 
             ~
-            & （15\%）
-            & （5\%） \\
+            & 占（10\%）
+            & 占（15\%）
+            & 占（5\%） \\
 
             \hline
 
-            \multirow{2}*{分值}
+            \multirow{2}*{\zihao{4}分\ \ 值}
             & \multirow{2}*{\zihao{4}#1}
-            & \multirow{2}*{\zihao{4}#2} \\
+            & \multirow{2}*{\zihao{4}#2}
+            & \multirow{2}*{\zihao{4}#3} \\
             
             ~
+            & ~
             & ~
             & ~ \\
             \hline
