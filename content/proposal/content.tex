@@ -1,16 +1,15 @@
 % Contents
 \let\cleardoublepage\clearpage
 % \cleardoublestylepage{empty}
-\thispagestyle{common}
 \pagestyle{common}
+\clearpage
 \setcounter{page}{1}
 
 % FIXME: set as first page if inside `proposal`
-\ifthenelse{\equal{\Period}{proposal}}
-{
-    \setcounter{page}{1}
-}
-{}
+% \ifthenelse{\equal{\Period}{proposal}}
+% {
+%     \setcounter{page}{1}
+% }
 
 \ifthenelse{\equal{\Type}{thesis}}
 {
